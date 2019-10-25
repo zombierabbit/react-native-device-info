@@ -180,8 +180,9 @@ RCT_EXPORT_MODULE(RNDeviceInfo)
 #if TARGET_OS_TV
     return @"not available";
 #else
-    UIWebView* webView = [[UIWebView alloc] initWithFrame:CGRectZero];
-    return [webView stringByEvaluatingJavaScriptFromString:@"navigator.userAgent"];
+    //UIWebView* webView = [[UIWebView alloc] initWithFrame:CGRectZero];
+    //return [webView stringByEvaluatingJavaScriptFromString:@"navigator.userAgent"];
+    return @"not available";
 #endif
 }
 
